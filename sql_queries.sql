@@ -15,3 +15,14 @@ SELECT Product, SUM(Sales) AS total_sales
 FROM sales_dataset
 GROUP BY Product
 ORDER BY total_sales DESC;
+-- Average Sales
+SELECT AVG(Sales) AS average_sales
+FROM sales_dataset;
+
+-- Highest Sales
+SELECT MAX(Sales) AS highest_sales
+FROM sales_dataset;
+
+-- Lowest Sales
+SELECT MIN(Sales) AS lowest_sales
+FROM sales_dataset;
